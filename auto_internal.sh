@@ -1,7 +1,6 @@
 echo -e "\x1B[31m --------------------------------------- \x1B[0m"
 echo -e "\x1B[31m ---MAKING FOLDERS--- \x1B[0m"
 echo -e "\x1B[31m --------------------------------------- \x1B[0m"
-mkdir bin
 mkdir loot
 mkdir hosts
 mkdir logs
