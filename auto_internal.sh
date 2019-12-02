@@ -10,7 +10,7 @@ echo -e "\x1B[31m ----------FINDING LOCAL NETWORK----------- \x1B[0m"
 echo -e "\x1B[31m --------------------------------------- \x1B[0m"
 
 ip=$(hostname -I)
-cat $ip |cut -d '.' -f1,2,3 |sort -u |sed 's/$/.0\/24/' > hosts/targets.txt
+echo $ip |cut -d '.' -f1,2,3 |sort -u |sed 's/$/.0\/24/' > hosts/targets.txt
 
 echo -e "\x1B[31m --------------------------------------- \x1B[0m"
 echo -e "\x1B[31m -TARGETING "$(cat hosts/targets.txt)"- \x1B[0m"
@@ -41,4 +41,4 @@ echo -e "\x1B[31m --------------------------------------- \x1B[0m"
 echo -e "\x1B[31m ----------WATCHING FOR SAM DUMPS------- \x1B[0m"
 echo -e "\x1B[31m --------------------------------------- \x1B[0m"
 
-tail -f loot/sam_dump*
+echo "When ready run: tail -f loot/sam_dump*"
