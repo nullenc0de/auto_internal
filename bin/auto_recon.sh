@@ -1,4 +1,5 @@
 echo "I want to dump AD objects and DNS records and sort them for you"
+echo
 #Read in creds to dump from DC
 echo "Enter Domain Controller (i.e. IP or Domain)"
 read dc
