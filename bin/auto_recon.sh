@@ -26,7 +26,7 @@ echo
 
 #Printing out external DNS records
 cat records.csv |cut -d "," -f3 |sort -u |grep -vE '^(192\.168|10\.|172\.1[6789]\.|172\.2[0-9]\.|172\.3[01]\.)' |grep -v "ip"
-echo "These records displayed might be juicy :)"
+echo "These external records displayed might be juicy :)"
 echo "Careful, they might be out of scope"
 echo
 
