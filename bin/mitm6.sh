@@ -1,3 +1,5 @@
+echo "I want to kick off mitm6 and look for relayable hosts."
+echo
 echo $(hostname -A) "is the hostname."
 ip=$(hostname -I)
 echo
